@@ -1,0 +1,20 @@
+Library Management System
+
+Develop a library management system to efficiently manage books, borrowers, and
+transactions within a library. The system will provide functionalities for librarians to add
+new books, manage borrower information, issue and return books, and generate reports.
+The completed project should include a graphical user interface (GUI) allowing librarians
+to perform CRUD operations on books and borrowers, as well as issue and return books.
+Data should be stored in a relational database using JDBC or an object-relational
+mapping (ORM) framework. Interns will deepen their understanding of object-oriented
+programming (OOP) principles, database interactions, and GUI development while
+implementing a real-world application in Java.
+Skills Required: Intermediate Java programming, understanding of object-oriented
+principles.
+
+
+Completed the task using :
+-Java Swing for the front end
+-Java for the back end
+-JDBC for database connectivity
+-MySQL for the database management
