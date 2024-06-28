@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+	fx:controller="payroll_system.employee.EmployeeController">
+	<children>
+		<Label text="Employee Payroll System" />
+
+		<ScrollPane VBox.vgrow="ALWAYS">
+			<content>
+				<GridPane VBox.vgrow="NEVER">
+					<columnConstraints>
+						<ColumnConstraints hgrow="SOMETIMES" />
+						<ColumnConstraints hgrow="SOMETIMES" />
+					</columnConstraints>
+					<rowConstraints>
+						<RowConstraints vgrow="SOMETIMES" />
+						<RowConstraints vgrow="SOMETIMES" />
+						<RowConstraints vgrow="SOMETIMES" />
+						<RowConstraints vgrow="SOMETIMES" />
+						<RowConstraints vgrow="SOMETIMES" />
+						<RowConstraints vgrow="SOMETIMES" />
+					</rowConstraints>
+					<children>
+						<Label text="Name:" GridPane.columnIndex="0"
+							GridPane.rowIndex="0" />
+						<TextField fx:id="nameField" GridPane.columnIndex="1"
+							GridPane.rowIndex="0" />
+						<Label text="Address:" GridPane.columnIndex="0"
+							GridPane.rowIndex="1" />
+						<TextField fx:id="addressField" GridPane.columnIndex="1"
+							GridPane.rowIndex="1" />
+						<Label text="Contact:" GridPane.columnIndex="0"
+							GridPane.rowIndex="2" />
+						<TextField fx:id="contactField" GridPane.columnIndex="1"
+							GridPane.rowIndex="2" />
+						<Label text="Position:" GridPane.columnIndex="0"
+							GridPane.rowIndex="3" />
+						<TextField fx:id="positionField"
+							GridPane.columnIndex="1" GridPane.rowIndex="3" />
+						<Label text="Hire Date:" GridPane.columnIndex="0"
+							GridPane.rowIndex="4" />
+						<DatePicker fx:id="hireDateField"
+							GridPane.columnIndex="1" GridPane.rowIndex="4" />
+						<Button text="Add Employee" onAction="#addEmployee"
+							GridPane.columnIndex="0" GridPane.rowIndex="5"
+							GridPane.columnSpan="2" />
+					</children>
+				</GridPane>
+			</content>
+		</ScrollPane>
+
+		<ScrollPane VBox.vgrow="ALWAYS">
+			<content>
+				<VBox VBox.vgrow="ALWAYS">
+					<children>
+						<Label text="Employee List" />
+						<ListView fx:id="employeeListView" VBox.vgrow="ALWAYS"
+							prefHeight="200.0" prefWidth="400.0" />
+					</children>
+				</VBox>
+			</content>
+		</ScrollPane>
+
+		<VBox VBox.vgrow="ALWAYS">
+			<children>
+				<Label text="Salary Details" />
+				<GridPane>
+					<columnConstraints>
+						<ColumnConstraints hgrow="SOMETIMES" />
+						<ColumnConstraints hgrow="SOMETIMES" />
+					</columnConstraints>
+					<rowConstraints>
+						<RowConstraints vgrow="SOMETIMES" />
+						<RowConstraints vgrow="SOMETIMES" />
+						<RowConstraints vgrow="SOMETIMES" />
+					</rowConstraints>
+					<children>
+						<Label text="Base Salary:" GridPane.columnIndex="0"
+							GridPane.rowIndex="0" />
+						<TextField fx:id="baseSalaryField"
+							GridPane.columnIndex="1" GridPane.rowIndex="0" />
+						<Label text="Bonus:" GridPane.columnIndex="0"
+							GridPane.rowIndex="1" />
+						<TextField fx:id="bonusField" GridPane.columnIndex="1"
+							GridPane.rowIndex="1" />
+						<Label text="Deductions:" GridPane.columnIndex="0"
+							GridPane.rowIndex="2" />
+						<TextField fx:id="deductionsField"
+							GridPane.columnIndex="1" GridPane.rowIndex="2" />
+						<Button text="Add Salary" onAction="#addSalary"
+							GridPane.columnIndex="0" GridPane.rowIndex="3"
+							GridPane.columnSpan="2" />
+					</children>
+				</GridPane>
+				<ListView fx:id="salaryListView" VBox.vgrow="ALWAYS"
+					prefHeight="200.0" prefWidth="400.0" />
+			</children>
+		</VBox>
+
+		<VBox VBox.vgrow="ALWAYS">
+			<children>
+				<Label text="Timesheet Details" />
+				<GridPane>
+					<columnConstraints>
+						<ColumnConstraints hgrow="SOMETIMES" />
+						<ColumnConstraints hgrow="SOMETIMES" />
+					</columnConstraints>
+					<rowConstraints>
+						<RowConstraints vgrow="SOMETIMES" />
+						<RowConstraints vgrow="SOMETIMES" />
+					</rowConstraints>
+					<children>
+						<Label text="Date:" GridPane.columnIndex="0"
+							GridPane.rowIndex="0" />
+						<DatePicker fx:id="timesheetDateField"
+							GridPane.columnIndex="1" GridPane.rowIndex="0" />
+						<Label text="Hours Worked:" GridPane.columnIndex="0"
+							GridPane.rowIndex="1" />
+						<TextField fx:id="hoursWorkedField"
+							GridPane.columnIndex="1" GridPane.rowIndex="1" />
+						<Button text="Add Timesheet" onAction="#addTimesheet"
+							GridPane.columnIndex="0" GridPane.rowIndex="2"
+							GridPane.columnSpan="2" />
+					</children>
+				</GridPane>
+				<ListView fx:id="timesheetListView" VBox.vgrow="ALWAYS"
+					prefHeight="200.0" prefWidth="400.0" />
+			</children>
+		</VBox>
+
+
+		<VBox VBox.vgrow="ALWAYS">
+			<children>
+				<Label text="Payroll Details" />
+				<GridPane>
+					<columnConstraints>
+						<ColumnConstraints hgrow="SOMETIMES" />
+						<ColumnConstraints hgrow="SOMETIMES" />
+					</columnConstraints>
+					<rowConstraints>
+						<RowConstraints vgrow="SOMETIMES" />
+						<RowConstraints vgrow="SOMETIMES" />
+					</rowConstraints>
+					<children>
+						<Label text="Pay Date:" GridPane.columnIndex="0"
+							GridPane.rowIndex="0" />
+						<DatePicker fx:id="payrollDateField"
+							GridPane.columnIndex="1" GridPane.rowIndex="0" />
+						<Label text="Gross Salary:" GridPane.columnIndex="0"
+							GridPane.rowIndex="1" />
+						<TextField fx:id="grossSalaryField"
+							GridPane.columnIndex="1" GridPane.rowIndex="1" />
+						<Label text="Net Salary:" GridPane.columnIndex="0"
+							GridPane.rowIndex="2" />
+						<TextField fx:id="netSalaryField"
+							GridPane.columnIndex="1" GridPane.rowIndex="2" />
+						<Button text="Add Payroll" onAction="#addPayroll"
+							GridPane.columnIndex="0" GridPane.rowIndex="3"
+							GridPane.columnSpan="2" />
+					</children>
+				</GridPane>
+				<ListView fx:id="payrollListView" VBox.vgrow="ALWAYS"
+					prefHeight="200.0" prefWidth="400.0" />
+			</children>
+		</VBox>
+
+	</children>
+</VBox>
