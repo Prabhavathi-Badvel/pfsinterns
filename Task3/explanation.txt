@@ -1,0 +1,21 @@
+Employee Payroll System
+
+Create an employee payroll system to manage employee information, salaries, and
+payroll processing accurately. The system will provide functionalities for adding new
+employees, calculating salaries, deducting taxes and other deductions, and generating
+pay slips. The completed project should include a GUI for managing employee records,
+entering time worked, and calculating salaries based on predefined rules. Payroll data
+should be stored securely in a relational database, and the application should support
+auditing and reporting functionalities. Interns will strengthen their skills in database
+design, transaction management, and payroll processing while developing a
+comprehensive employee payroll system in Java.
+Skills Required: Advanced Java programming, understanding of database operations.
+
+
+
+Completed Task3 using:
+
+-JavaFX for the front end
+-Java for the back end
+-JDBC for database connectivity
+-MySQL for the database management
