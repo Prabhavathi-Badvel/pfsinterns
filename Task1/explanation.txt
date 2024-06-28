@@ -1,0 +1,21 @@
+Create a simple student record management system to store and manage information
+such as student names, roll numbers, and grades. The system will allow users to add
+new student records, view existing records, update information, and delete records as
+
+needed. The completed project should be a console-based application featuring a menu-
+driven interface for performing CRUD operations on student records. Data should be
+
+stored persistently using file handling techniques, and basic validation should be
+implemented to ensure data integrity. Interns will learn about file handling in Java,
+including reading from and writing to text files, as well as implementing CRUD operations
+in a console-based application.
+Skills Required: Basic Java programming, understanding of file handling.
+
+Completed the Task using :
+
+-Spring MVC for the web framework, incorporating model, service, controller, and repository classes
+-Java for the backend logic
+-MySQL for the database management
+-Tomcat server for deployment
+-Eclipse IDE for development
+~                                                                                                                                    ~                       
